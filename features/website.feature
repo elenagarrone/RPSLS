@@ -12,3 +12,8 @@ Scenario: Registering
   And click on "Start!"
   Then it should appear "Rock Paper Scissors Lizard Spock"
   And I should have "Welcome Elena. Choose a weapon!"
+
+Scenario: Rock
+  Given I have registered
+  When click on "Rock"
+  Then I should see "Elena choose ROCK."

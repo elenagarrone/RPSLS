@@ -10,9 +10,15 @@ class RPSLS < Sinatra::Base
   post '/game' do
     @player = params[:player]
     session[:player] = @player
-    erb:"/game"
+    erb :"/game"
   end
 
-  # start the server if ruby file executed directly
+  post '/results' do
+    @weapon = params[:weapon]
+    @player = session[:player]
+    puts @player
+    erb :"/results"
+  end
+
   run! if app_file == $0
 end

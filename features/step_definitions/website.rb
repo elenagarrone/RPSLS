@@ -10,8 +10,8 @@ When(/^I fill in "(.*?)" with "(.*?)"$/) do |player, name|
   fill_in(player, :with => name)
 end
 
-When(/^click on "(.*?)"$/) do |start|
-  click_button(start)
+When(/^click on "(.*?)"$/) do |button|
+  click_button(button)
 end
 
 Then(/^it should appear "(.*?)"$/) do |text|
@@ -20,4 +20,10 @@ end
 
 And(/^I should have "(.*?)"$/) do |text|
   expect(page).to have_content(text)
+end
+
+Given(/^I have registered$/) do
+  visit '/'
+  fill_in("player", :with => 'Elena')
+  click_button('Start!')
 end
