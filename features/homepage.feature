@@ -10,4 +10,5 @@ Scenario: Registering
   Given I am on the homepage
   When I fill in "player" with "Elena"
   And click on "Start!"
-  Then I should have "Welcome Elena. Choose a weapon!"
+  Then it should appear "Rock Paper Scissors Lizard Spock"
+  And I should have "Welcome Elena. Choose a weapon!"

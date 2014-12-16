@@ -14,6 +14,10 @@ When(/^click on "(.*?)"$/) do |start|
   click_button(start)
 end
 
-Then(/^I should have "(.*?)"$/) do |text|
+Then(/^it should appear "(.*?)"$/) do |text|
+  expect(page).to have_content(text)
+end
+
+And(/^I should have "(.*?)"$/) do |text|
   expect(page).to have_content(text)
 end
