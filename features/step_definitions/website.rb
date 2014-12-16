@@ -10,10 +10,10 @@ When(/^I fill in "(.*?)" with "(.*?)"$/) do |player, name|
   fill_in(player, :with => name)
 end
 
-When(/^click on "(.*?)"$/) do |arg1|
-  pending # express the regexp above with the code you wish you had
+When(/^click on "(.*?)"$/) do |start|
+  click_button(start)
 end
 
-Then(/^I should see "(.*?)"s$/) do |arg1|
-  pending # express the regexp above with the code you wish you had
+Then(/^I should have "(.*?)"$/) do |text|
+  expect(page).to have_content(text)
 end

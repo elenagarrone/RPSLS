@@ -10,4 +10,4 @@ Scenario: Registering
   Given I am on the homepage
   When I fill in "player" with "Elena"
   And click on "Start!"
-  Then I should see "Welcome Elena. Choose a weapon!"s
+  Then I should have "Welcome Elena. Choose a weapon!"
