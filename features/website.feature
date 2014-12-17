@@ -17,3 +17,13 @@ Scenario: Rock
   Given I have registered
   When click on "ROCK"
   Then I should see "Elena chose ROCK."
+
+Scenario: Paper
+  Given I have registered
+  When click on "PAPER"
+  Then I should see "Elena chose PAPER"
+
+Scenario: Scissors
+  Given I have registered
+  When click on "SCISSORS"
+  Then I should see "Elena chose SCISSORS"
