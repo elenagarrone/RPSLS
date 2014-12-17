@@ -14,4 +14,8 @@ describe Game do
     expect(game.player.name).to eq('Elena')
   end
 
+  it "should be initialized without the choice of teh computer" do
+    expect(game.computer_choice).to eq(nil)
+  end
+
 end
