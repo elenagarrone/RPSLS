@@ -32,3 +32,8 @@ Scenario: Lizard
   Given I have registered
   When click on "LIZARD"
   Then I should see "Elena chose LIZARD"
+
+Scenario: Spock
+  Given I have registered
+  When click on "SPOCK"
+  Then I should see "Elena chose SPOCK"
