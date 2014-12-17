@@ -2,6 +2,7 @@ require 'sinatra/base'
 
 class RPSLS < Sinatra::Base
   enable :sessions
+  set :session_secret, "super_secret"
 
   get '/' do
     erb :index
@@ -10,14 +11,13 @@ class RPSLS < Sinatra::Base
   post '/game' do
     @player = params[:player]
     session[:player] = @player
-    erb :"/game"
+    erb :game
   end
 
   post '/results' do
     @weapon = params[:weapon]
     @player = session[:player]
-    puts @player
-    erb :"/results"
+    erb :results
   end
 
   run! if app_file == $0
