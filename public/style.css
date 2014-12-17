@@ -1,0 +1,35 @@
+body {
+  background: rgb(37, 37, 37);
+}
+
+body header {
+  padding: 10% 0% 2% 0%;
+}
+
+body header h1 {
+  color: white;
+  text-shadow: 3px 3px #ff0000;
+  text-align: center;
+  font-family: 'Russo One', sans-serif;
+  font-size: 280%;
+  padding: 0% 19% 0% 19%;
+}
+
+body form#name{
+  text-align: center;
+  background-color: rgba(215, 215, 215, 0.6);
+  padding: 2% 0% 2% 0%;
+  margin: 9% 33% 0% 33%;
+  display: block;
+  border-radius: 12px;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 21px;
+}
+
+body form#name input#player {
+  height: 30px;
+  border-style: none;
+  border-radius: 7px;
+  padding:0px 5px 0px 5px;
+  margin-left: 0px 0px 0px 8px;
+}

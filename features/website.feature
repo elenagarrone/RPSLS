@@ -4,7 +4,7 @@ Feature: Start a game
 
 Scenario: Visiting the page
   Given I am on the homepage
-  Then I should see "Welcome to Rock Paper Scissors Lizard Spock!"
+  Then I should see "Rock Paper Scissors Lizard Spock"
 
 Scenario: Registering
   Given I am on the homepage
@@ -37,3 +37,7 @@ Scenario: Spock
   Given I have registered
   When click on "SPOCK"
   Then I should see "Elena chose SPOCK"
+
+Scenario: Visiting the result page
+  Given I am on the result page
+  Then I should see "Play Again!"
