@@ -27,3 +27,8 @@ Scenario: Scissors
   Given I have registered
   When click on "SCISSORS"
   Then I should see "Elena chose SCISSORS"
+
+Scenario: Lizard
+  Given I have registered
+  When click on "LIZARD"
+  Then I should see "Elena chose LIZARD"
