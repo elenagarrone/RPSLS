@@ -16,4 +16,4 @@ Scenario: Registering
 Scenario: Rock
   Given I have registered
   When click on "ROCK"
-  Then I should see "Elena choose ROCK."
+  Then I should see "Elena chose ROCK."
