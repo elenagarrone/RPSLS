@@ -27,4 +27,11 @@ describe Game do
     expect(game.winner).to eq(nil)
   end
 
+  it "should know that it has a winner" do
+    game.player = player
+    player.weapon = "ROCK"
+    game.results
+    expect(game.winner).not_to eq(nil)
+  end
+
 end
