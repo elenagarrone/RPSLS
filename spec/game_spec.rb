@@ -18,4 +18,13 @@ describe Game do
     expect(game.computer_choice).to eq(nil)
   end
 
+  it "should choose randomly for the computer" do
+    game.computer_choose_randomly
+    expect(game.computer_choice).not_to eq(nil)
+  end
+
+  it "should be initialized without a winner" do
+    expect(game.winner).to eq(nil)
+  end
+
 end
