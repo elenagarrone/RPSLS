@@ -8,6 +8,7 @@ class RPSLS < Sinatra::Base
   GAME = Game.new
 
   enable :sessions
+  set :public_folder, Proc.new{ File.join(root, '..', 'public')}
 
   get '/' do
     erb :index
