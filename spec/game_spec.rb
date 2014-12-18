@@ -2,8 +2,8 @@ require 'game'
 
 describe Game do
 
-  let(:game)   {Game.new}
-  let(:player) {Player.new('Elena')}
+  let(:game)   { Game.new }
+  let(:player) { Player.new('Elena') }
 
   it "should be initialized with a player" do
     expect(game.player).to eq(nil)

@@ -2,7 +2,7 @@ require 'player'
 
 describe Player do
 
-  let(:player) {Player.new('Elena')}
+  let(:player) { Player.new('Elena') }
 
   it "should have a name" do
     expect(player.name).to eq('Elena')
