@@ -76,7 +76,6 @@ body form input#weapon {
   border: 1px solid;
   width: 30%;
   margin: 0% 0.5% 1% 0%;
-  transition: opacity 0.2s ease;
 }
 
 body form input#weapon:hover {
@@ -101,4 +100,24 @@ body h4 {
   font-family: 'Russo One', sans-serif;
   font-size: 220%;
   padding: 0% 19% 4% 19%;
+}
+
+body section {
+  text-align: center;
+}
+
+body section a#play_again {
+  font-family: 'Exo', sans-serif;
+  background-color: white;
+  text-decoration: none;
+  color: red;
+  padding: 0.5% 2% 0.5% 2%;
+  border-radius: 5px;
+  border: 1px solid;
+}
+
+body section a#play_again:hover {
+  box-shadow: 0px 0px 26px #fff;
+  background-color: red;
+  color: white;
 }
