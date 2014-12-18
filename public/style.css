@@ -3,7 +3,7 @@ body {
 }
 
 body header {
-  padding: 10% 0% 2% 0%;
+  padding: 7% 0% 2% 0%;
 }
 
 body header h1 {
@@ -15,14 +15,17 @@ body header h1 {
   padding: 0% 19% 0% 19%;
 }
 
+body img {
+  display: block;
+  margin: 4% auto 0% auto;
+}
+
 body form#name{
   text-align: center;
-  background-color: rgba(215, 215, 215, 0.6);
   padding: 2% 0% 2% 0%;
-  margin: 9% 33% 0% 33%;
+  margin: 3% 33% 0% 33%;
   display: block;
-  border-radius: 12px;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: 'Exo', sans-serif;
   font-size: 21px;
 }
 
@@ -31,5 +34,15 @@ body form#name input#player {
   border-style: none;
   border-radius: 7px;
   padding:0px 5px 0px 5px;
-  margin-left: 0px 0px 0px 8px;
+  margin: 0px 0px 0px 8px;
+}
+
+body form#name input#start {
+  height: 30px;
+  border-style: none;
+  border-radius: 6px;
+  padding: 0% 3% 0% 3%;
+  color: rgb(37, 37, 37);
+  font-family: 'Exo', sans-serif;
+  font-size: 14px;
 }

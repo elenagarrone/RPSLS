@@ -22,7 +22,6 @@ class RPSLS < Sinatra::Base
 
   get '/game' do
     @player = session[:player]
-    puts GAME.inspect
     erb :game
   end
 
