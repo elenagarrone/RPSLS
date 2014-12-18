@@ -14,10 +14,6 @@ When(/^click on "(.*?)"$/) do |button|
   click_button(button)
 end
 
-Then(/^it should appear "(.*?)"$/) do |text|
-  expect(page).to have_content(text)
-end
-
 And(/^I should have "(.*?)"$/) do |text|
   expect(page).to have_content(text)
 end
@@ -30,4 +26,8 @@ end
 
 Given(/^I am on the result page$/) do
   visit '/results'
+end
+
+When(/^the computer chose "(.*?)"$/) do |weapon|
+  @computer = weapon #cucumber????
 end
