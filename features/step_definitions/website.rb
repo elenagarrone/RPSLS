@@ -27,3 +27,7 @@ Given(/^I have registered$/) do
   fill_in("player", :with => 'Elena')
   click_button('Start!')
 end
+
+Given(/^I am on the result page$/) do
+  visit '/results'
+end
