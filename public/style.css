@@ -45,6 +45,22 @@ body form#name input#player {
   margin: 0px 0px 0px 8px;
 }
 
+body form#name input#player:focus{
+  outline: 0;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+  color: red;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: red;
+  opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+  color: red;
+}
+
 body form#name input#start {
   height: 30px;
   border-style: none;
@@ -53,6 +69,10 @@ body form#name input#start {
   color: rgb(37, 37, 37);
   font-family: 'Exo', sans-serif;
   font-size: 14px;
+}
+
+body form#name input#start:focus{
+  outline: 0;
 }
 
 /*=========================
@@ -104,6 +124,7 @@ body h4 {
 
 body section {
   text-align: center;
+  margin: 3% 0% 0% 0%;
 }
 
 body section a#play_again {
