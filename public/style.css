@@ -70,13 +70,22 @@ body form#name input#start {
   border-style: none;
   border-radius: 6px;
   padding: 0% 3% 0% 3%;
-  color: rgb(37, 37, 37);
+  background-color:white;
+  color: red;
+  border: 1px solid red;
   font-family: 'Exo', sans-serif;
   font-size: 14px;
 }
 
 body form#name input#start:focus{
   outline: 0;
+}
+
+body form#name input#start:hover{
+  box-shadow: 0px 0px 26px #fff;
+  background-color: red;
+  color: white;
+  cursor: pointer;
 }
 
 /*=========================
