@@ -1,9 +1,13 @@
+/*=========================
+        LAYOUT
+=========================*/
+
 body {
   background: rgb(37, 37, 37);
 }
 
 body header {
-  padding: 7% 0% 2% 0%;
+  padding: 5% 0% 2% 0%;
 }
 
 body header h1 {
@@ -15,12 +19,16 @@ body header h1 {
   padding: 0% 19% 0% 19%;
 }
 
+/*=========================
+        HOMEPAGE
+=========================*/
+
 body img {
   display: block;
   margin: 4% auto 0% auto;
 }
 
-body form#name{
+body form#name {
   text-align: center;
   padding: 2% 0% 2% 0%;
   margin: 3% 33% 0% 33%;
@@ -45,4 +53,31 @@ body form#name input#start {
   color: rgb(37, 37, 37);
   font-family: 'Exo', sans-serif;
   font-size: 14px;
+}
+
+/*=========================
+        /GAME
+=========================*/
+
+body h2 {
+  color: white;
+  text-align: center;
+  font-family: 'Russo One', sans-serif;
+  font-size: 190%;
+  padding: 0% 19% 4% 19%;
+}
+
+body form {
+  text-align: center;
+}
+
+body form input#weapon {
+  border: 1px solid;
+  width: 30%;
+  margin: 0% 0.5% 1% 0%;
+  transition: opacity 0.2s ease;
+}
+
+body form input#weapon:hover {
+  box-shadow: 0px 0px 26px #fff;
 }
