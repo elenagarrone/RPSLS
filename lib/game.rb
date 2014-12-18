@@ -23,7 +23,7 @@ class Game
     computer_choose_randomly
     @winner = 'draw' if @player.weapon == @computer_choice
     @winner = @player.name if BEATS[@player.weapon].include?(@computer_choice)
-    @winner = 'Computer' if BEATS[@computer_choice].include?(@player.weapon)
+    @winner = 'The computer' if BEATS[@computer_choice].include?(@player.weapon)
   end
 
 end

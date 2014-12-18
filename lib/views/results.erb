@@ -1,8 +1,8 @@
 <% if @winner == 'draw' %>
-  <h1>You both chose <%= @weapon %>.</h1>
+  <h3>You both chose <%= @weapon %>.</h3>
 <% else %>
-  <h1> <%= @player %> chose <%= @weapon %>. The computer chose <%= @computer %></h1>
-  <h1> <%= @winner %> wins!</h1>
+  <h3> <%= @player %> chose <%= @weapon %>. The computer chose <%= @computer %></h3>
+  <h4> <%= @winner %> wins!</h4>
 <% end %>
 
 <a href="/game">Play Again!</a>
