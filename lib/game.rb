@@ -8,11 +8,13 @@ class Game
     @winner = nil
   end
 
-  BEATS = { "ROCK" => ["SCISSORS", "LIZARD"],
-            "PAPER" => ["ROCK", "SPOCK"],
+  BEATS = { 
+            "ROCK"     => ["SCISSORS", "LIZARD"],
+            "PAPER"    => ["ROCK", "SPOCK"],
             "SCISSORS" => ["PAPER", "LIZARD"],
-            "LIZARD" => ["PAPER", "SPOCK"],
-            "SPOCK" => ["SCISSORS", "ROCK"] }
+            "LIZARD"   => ["PAPER", "SPOCK"],
+            "SPOCK"    => ["SCISSORS", "ROCK"]
+          }
 
   def computer_choose_randomly
     choices = ["ROCK", "PAPER", "SCISSORS", "LIZARD", "SPOCK"]
