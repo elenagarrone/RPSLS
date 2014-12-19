@@ -21,23 +21,23 @@ class Game
     @computer_choice = choices.sample
   end
 
-  def draw
+  def is_draw?
     @winner = 'draw' if @player.weapon == @computer_choice
   end
 
-  def player_winner
+  def is_player_winner?
     @winner = @player.name if BEATS[@player.weapon].include?(@computer_choice)
   end
 
-  def computer_winner
+  def is_computer_winner?
     @winner = 'The computer' if BEATS[@computer_choice].include?(@player.weapon)
   end
 
   def results
     computer_choose_randomly
-    draw
-    player_winner
-    computer_winner
+    is_draw?
+    is_player_winner?
+    is_computer_winner?
   end
 
 end
