@@ -2,15 +2,20 @@
 
 ROCK/PAPER/SCISSORS/LIZARD/SPOCK
 ================================
-add description here
+The challange for week 3 was to create 'Rock, Paper, Scissors, Lizard, Spock' for the browser. It's built using Sinatra and Ruby. Testing was done with RSpec and Cucumber.
+
+<img src='public/images/homepage.png'>
+<img src='public/images/gamepage.png'>
+<img src='public/images/resultpage1.png'>
 
 On Heroku:
 ----------
-add link to heroku here
+https://rpsls-rb.herokuapp.com/game
 
 Technologies:
 ------------
 - Ruby
+- Sinatra
 - CSS
 - HTML
 - RSpec
