@@ -4,10 +4,14 @@
 
 body {
   background: rgb(37, 37, 37);
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
 }
 
 body header {
-  padding: 5% 0% 2% 0%;
+  padding: 4% 0% 2% 0%;
 }
 
 body header a {
@@ -97,7 +101,7 @@ body h2 {
   text-align: center;
   font-family: 'Russo One', sans-serif;
   font-size: 190%;
-  padding: 0% 19% 4% 19%;
+  padding: 0% 19% 3% 19%;
 }
 
 body form {
@@ -105,9 +109,13 @@ body form {
   margin: 0% 0% 7% 0%;
 }
 
+body form section#first_images, section#second_images {
+  margin: 0% 0% 0% 0%;
+}
+
 body form input#weapon {
   border: 1px solid;
-  width: 30%;
+  width: 23%;
   margin: 0% 0.5% 1% 0%;
 }
 
