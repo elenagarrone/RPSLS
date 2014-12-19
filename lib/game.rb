@@ -8,7 +8,7 @@ class Game
     @winner = nil
   end
 
-  BEATS = { 
+  BEATS = {
             "ROCK"     => ["SCISSORS", "LIZARD"],
             "PAPER"    => ["ROCK", "SPOCK"],
             "SCISSORS" => ["PAPER", "LIZARD"],
@@ -21,11 +21,23 @@ class Game
     @computer_choice = choices.sample
   end
 
+  def draw
+    @winner = 'draw' if @player.weapon == @computer_choice
+  end
+
+  def player_winner
+    @winner = @player.name if BEATS[@player.weapon].include?(@computer_choice)
+  end
+
+  def computer_winner
+    @winner = 'The computer' if BEATS[@computer_choice].include?(@player.weapon)
+  end
+
   def results
     computer_choose_randomly
-    @winner = 'draw' if @player.weapon == @computer_choice
-    @winner = @player.name if BEATS[@player.weapon].include?(@computer_choice)
-    @winner = 'The computer' if BEATS[@computer_choice].include?(@player.weapon)
+    draw
+    player_winner
+    computer_winner
   end
 
 end
