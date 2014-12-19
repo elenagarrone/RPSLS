@@ -14,10 +14,6 @@ When(/^click on "(.*?)"$/) do |button|
   click_button(button)
 end
 
-And(/^I should have "(.*?)"$/) do |text|
-  expect(page).to have_content(text)
-end
-
 Given(/^I have registered$/) do
   visit '/'
   fill_in("player", :with => 'Elena')
@@ -26,8 +22,4 @@ end
 
 Given(/^I am on the result page$/) do
   visit '/results'
-end
-
-When(/^the computer chose "(.*?)"$/) do |weapon|
-  @computer = weapon #cucumber????
 end
