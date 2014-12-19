@@ -55,3 +55,4 @@ and:
 ```shell
 $ cucumber
 ```
+The cucumber tests are failing sometimes due to the fact that the computer chose rendomly its weapon. You can have a look <a href='public/images/cucumber.png'>HERE</a> to see all the tests passing.
